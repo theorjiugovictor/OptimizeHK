@@ -52,7 +52,7 @@ nav a {
 /* Hero Section */
 .hero {
     text-align: center;
-    background-image: url('your-hero-image.jpg'); /* Replace with actual image */
+    background-image: url('heroimage.png'); /* Replace with actual image */
     background-size: cover;
     background-position: center;
     color: #fff;
