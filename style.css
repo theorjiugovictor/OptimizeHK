@@ -1,63 +1,122 @@
 /* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     margin: 0;
-    color: #333;
+    color: #333;  /* Dark gray for text */
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light gray for background */
 }
 
+/* Typography */
+h1, h2, h3 {
+    font-weight: 600;  /* Slightly bold headings */
+}
+
+/* Header Styles */
 header {
-    background: #007bff; /* Primary Color */
-    color: white;
+    background-color: #007BFF; /* Primary color (blue) */
+    color: #fff; /* White text */
     padding: 1rem 0;
+    text-align: center;  /* Center align header content */
 }
 
-nav {
+.logo { /* Logo styling (if needed) */
+    /* ... */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
-/* Section Styles */
-section {
-    padding: 2rem;
-}
-
+/* Hero Section */
 .hero {
     text-align: center;
-    background-image: url('hero-image.jpg'); /* Replace with actual image */
+    background-image: url('your-hero-image.jpg'); /* Replace with actual image */
     background-size: cover;
-    color: white;
-    padding: 5rem 0;
+    background-position: center;
+    color: #fff;
+    padding: 8rem 0;
 }
 
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero button {
+    /* Style the button */
+}
+
+/* Features Section */
 .features {
     display: flex;
-    flex-wrap: wrap; /* Wrap cards to next line if needed */
+    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 2rem 0;
 }
 
 .feature {
-    width: 30%; /* Adjust width as needed */
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: white;
+    width: 30%;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-/* Other Sections: testimonials, CTA, etc. - style similarly */
+.feature h3 {
+    margin-top: 0;
+}
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
+/* Testimonials Section */
+.testimonials {
+    /* Style testimonials as needed */
+}
+
+/* Call to Action Section */
+.cta {
     text-align: center;
+    padding: 3rem 0;
+}
+
+.cta button {
+    /* Style buttons */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
     padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+    .feature {
+        width: 45%;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+    }
 }
