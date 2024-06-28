@@ -21,3 +21,21 @@ contactForm?.addEventListener('submit', (event) => {
     // Add your form validation logic here
     alert('Form submitted!');
 });
+
+// Form validation for the sign-up page
+const signupForm = document.getElementById('signup-form');
+signupForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+    }
+
+    // Proceed with form submission (e.g., send data to server)
+    alert('Sign up successful!');
+});
