@@ -144,6 +144,52 @@ nav a {
     background-color: #1e7aa3; /* Darker shade of #2596be */
 }
 
+/* Sign Up Page Styles */
+.signup {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.signup h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2596be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup button:hover {
+    background-color: #1e7aa3;
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #333;
